@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "uxspeed-dev",
+  "pages_build_output_dir": ".",
+  "compatibility_date": "2026-03-01",
+  "routes": [
+    {
+      "pattern": "uxspeed.dev",
+      "custom_domain": true,
+    },
+  ],
+}
