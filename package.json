@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "deploy": "wrangler deploy",
     "format": "prettier --write ."
   },
   "repository": {
