@@ -1,0 +1,25 @@
+{
+  "name": "uxspeed.dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergeychernyshev/uxspeed.dev.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sergeychernyshev/uxspeed.dev/issues"
+  },
+  "homepage": "https://github.com/sergeychernyshev/uxspeed.dev#readme",
+  "devDependencies": {
+    "prettier": "^3.8.1",
+    "wrangler": "^4.69.0"
+  }
+}
