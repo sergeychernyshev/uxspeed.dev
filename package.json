@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/sergeychernyshev/uxspeed.dev#readme",
   "devDependencies": {
-    "prettier": "^3.8.1",
-    "wrangler": "^4.69.0"
+    "prettier": "latest",
+    "wrangler": "latest"
   }
 }
