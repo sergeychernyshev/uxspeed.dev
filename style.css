@@ -1,0 +1,135 @@
+:root {
+    --bg-color: #f8f9fa;
+    --text-color: #212529;
+    --header-bg: #343a40;
+    --header-text: #ffffff;
+    --card-bg: #ffffff;
+    --card-hover-bg: #e9ecef;
+    --card-border: #dee2e6;
+    --link-color: #007bff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--header-bg);
+    color: var(--header-text);
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 0.5rem 0 0;
+    font-weight: 300;
+}
+
+main {
+    flex: 1;
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+h2 {
+    border-bottom: 2px solid var(--card-border);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    padding: 0; /* Remove padding to allow image to span full width */
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Ensure image corners are rounded */
+}
+
+.thumbnail-container {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: #eee;
+    overflow: hidden;
+    border-bottom: 1px solid var(--card-border);
+}
+
+.thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card:hover {
+    background-color: var(--card-hover-bg);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: var(--link-color);
+}
+
+.card p {
+    margin-bottom: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background-color: var(--header-bg);
+    color: var(--header-text);
+    margin-top: auto;
+}
+
+footer a {
+    color: #a5caff; /* Lighter blue for dark background */
+    text-decoration: none;
+    border-bottom: 1px dashed rgba(165, 202, 255, 0.4);
+    transition: color 0.2s, border-bottom-color 0.2s;
+}
+
+footer a:hover {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+}
